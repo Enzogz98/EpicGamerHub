@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="En nuestra web vas a encontrar los videos juegos más populares y a un precio totalmente accesible, te lo pensas perder!"
+    />
+    <meta
+      name="keywords"
+      content="Juegos, Ecommerce, Venta, Gaming, Gamers, HTML, CSS, Bootstrap, responsive, javascript, objetos"
+    />
+    <meta
+      name="author"
+      content="Gonzalez Enzo"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/NavFooter.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>EpicGamerHub Entertainment</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto" href="../index.html">
+                <img src="./img/logo.png" alt="Logo" class="logo d-inline-block align-text-top">
+            </a>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Inicio</a>
+                </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/juegos.html">Juegos</a>
+                    </li>                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mas opciones
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-start">
+                            <li><a class="dropdown-item" href="./pages/error404.html">Más Vendidos</a></li>
+                            <li><a class="dropdown-item" href="./pages/error404.html">Ofertas Especiales</a></li>
+                            <li><a class="dropdown-item" href="./pages/error404.html">Plataformas de Juego</a></li>
+                            <li><a class="dropdown-item" href="./pages/error404.html">Medios de Pago</a></li>
+                            <li><a class="dropdown-item" href="./pages/error404.html">Novedades</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ocultarAdmin">
+                      <a class="nav-link" href="./pages/nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item ocultarAdmin">
+                      <button class="nav-link" id="btnFavoritos"><i class="bi bi-heart"></i></button>
+                    </li>
+                    <li class="nav-item dropdown d-none" id="opcionesAdmin">
+                      <a class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                        >Administrador</a
+                      >
+                      <ul class="dropdown-menu dropdown-menu-start">
+                        <li>
+                          <a class="dropdown-item" href="./pages/administrador.html">Juegos</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./pages/adminUsuarios.html">Usuarios</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <ul class="navbar-nav">
+                        <li class="nav-item dropdown ml-auto"> 
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-start" id="opcionesUser">
+                                <li><a class="dropdown-item" href="./pages/login.html">Iniciar Sesión</a></li>
+                                <li><a class="dropdown-item" href="./pages/registro.html">Registrarse</a></li>
+                                <li class="d-none"><input type="text" disabled class="dropdown-item"></li>
+                                <li class="d-none">
+                                  <button class="dropdown-item text-dark" id="btnCerrarSesion">Cerrar sesión</button>
+                                </li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+    
+    <main class="bg-main">
+      <!-- SECCION BANNER  -->
+      <section>
+        <!-- Carousel de juegos  -->
+        <div id="carouselJuegos" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselJuegos"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselJuegos"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselJuegos"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://cdn2.unrealengine.com/egs-thelastofuspartidigitaldeluxeedition-naughtydogllc-editions-g1a-09-1920x1080-be92e6aa7cd2.jpg"
+                class="d-block w-100 img-carousel img-fluid"
+                alt="Imagen de juego"
+              />
+              <div class="carousel-info text-center text-md-start">
+                <h2 class="titleGame text-light display-4 fw-bold">The Last of Us™ Part I</h2>
+                <h4 class="fs-5 genero">Acción</h4>
+                <div class="btn-container mt-4">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fheather%2Fhome%2FEGS_RockstarGames_RedDeadRedemption2_G1A_04-1920x1080-3e2c5e1e843eac593d1957ea22ef5f128c34b995.jpg?h=720&quality=medium&resize=1&w=1280"
+                class="d-block w-100 img-carousel"
+                alt="Imagen del juego"
+              />
+              <div class="carousel-info text-center text-md-start">
+                <h2 class="titleGame text-light display-4 fw-bold">Red Dead Redemption 2</h2>
+                <h4 class="fs-5 genero">Acción</h4>
+                <div class="btn-container mt-4">      
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn2.unrealengine.com/egs-easportsfc24standardedition-eacanada-g1a-04-1920x1080-888c9f17f2e1.jpg"
+                class="d-block w-100 img-carousel"
+                alt="Imagen del juego"
+              />
+              <div class="carousel-info text-center text-md-start">
+                <h2 class="titleGame text-light display-4 fw-bold">EA Sports FC 24</h2>
+                <h4 class="fs-5 genero">Deportes</h4>
+                <div class="btn-container mt-4">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselJuegos"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselJuegos"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- SECCION JUEGOS  -->
+      <section class="container my-5">
+        <div class="row justify-content-between align-items-center mb-5 gap-3">
+          <div class="col-md-12 col-lg-6">
+            <h1 class="text-light fs-2 fw-bold text-center text-lg-start">JUEGOS DESTACADOS</h1>
+          </div>
+          <form id="searchGames" class="col-md-10 m-sm-auto m-lg-0 col-lg-5 d-flex">
+            <input
+              type="text"
+              class="form-control"
+              id="inputGames"
+              placeholder="Escriba el nombre del juego"
+              maxlength="80"
+            />
+            <button type="submit" class="btn-customized ms-2">Buscar</button>
+          </form>
+        </div>
+        <div id="gamesContainer" class="row my-4 justify-content-center px-1 px-sm-0">
+        </div>
+        <div class="text-center">
+          <a href="./pages/juegos.html" class="btn-customized fs-4">Ver todos los juegos</a>
+        </div>
+      </section>
+
+      <!-- Seccion publicidad -->
+      <section class="my-5 publicidad">
+        <div class="container row">
+          <div class="col-lg-6 text-center text-md-start">
+            <h4 class="fs-1 fw-bold mb-5 text-light">Descarga Nuestra App y Explora el Universo de los Juegos</h4>
+            <a href="./pages/error404.html" class="btn-customized-2 fs-3">Descarga ahora</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="offcanvas offcanvas-end bg-main text-light" tabindex="-1" id="offcanvasFavoritos" aria-labelledby="offcanvasFavoritosLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasFavoritosLabel">Lista de Favoritos</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <h6>Estos son tus juegos favoritos</h6>
+        <div class="listaFavoritos-container">
+          
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <img src="./img/logo.png" alt="Logo" class="logo d-inline-block align-text-center">
+        <h6>Sigue a EpicGamerHub</h6>
+        <a href="./pages/error404.html" class="fs-2 iconRedes"><i class="bi bi-twitter"></i></a>
+        <a href="./pages/error404.html" class="fs-2 iconRedes mx-3"><i class="bi bi-linkedin"></i></a>
+        <a href="./pages/error404.html" class="fs-2 iconRedes"><i class="bi bi-instagram"></i></a>
+        <p>©2023 EpicGamerHub Entertainment, Inc. All trademarks referenced herein are the properties of their respective owners.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <script type="module" src="./js/favourites.js"></script>
+    <script type="module" src="./js/sessionManager.js"></script>
+    <script src="./js/masInformacion.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

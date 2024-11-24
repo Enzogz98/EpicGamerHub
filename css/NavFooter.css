@@ -1,0 +1,123 @@
+.body-navFooter{
+    background-color: #1c1e26;
+    
+}
+
+.navbar{
+    background: linear-gradient(0deg, rgba(0,0,80,0.7),rgba(0,0,80,0.7));
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(30px);
+    box-shadow: 5px 5px 20px rgba(0,0,10,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-brand {
+    margin-right: auto; 
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: white !important; 
+    margin: 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active{
+    padding-left: 7px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd !important; 
+}
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu a {
+    color: black !important; 
+}
+.navbar-toggler {
+    background-color: rgba(70, 130, 180, 0.5) !important;
+    border: none;
+    order: -1;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+.navbar-nav .bi-person-circle {
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        text-align: left; 
+    }
+
+    .navbar-nav {
+        width: 100%; 
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%; 
+        text-align: left; 
+        margin: 10px 0; 
+    }
+
+    .navbar-nav .nav-item a {
+        display: block;
+    }
+
+    .navbar-collapse form {
+        width: 100%; 
+        text-align: left; 
+        margin: 10px 0; 
+    }
+}
+
+footer {
+    background-image:url('../img/fondofooter.webp'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 8em;
+    color: white;
+}
+
+footer img {
+    display: block;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+    
+}
+
+footer h6 {
+    font-size: 1.5em;;
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-top: 20px; 
+}
+
+.logo{
+    width: 200px;
+    height: 70px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 80px 5px; 
+        background-size: cover;
+    }
+}

@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,
+tr,
+li {
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+.img-favoritos-container{
+    height: 120px;
+}
+
+.img-favoritos{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/*Estilos pagina registro */
+
+.bg-register{
+    background-image: linear-gradient(to right, #023683, #063297, #1c2553, #1c1c63, #644ae7);
+    background-size: cover;
+    height: 120vh;
+
+    position: relative;
+    z-index: 2;
+}
+
+.bg-register::after{
+    content: "";
+    background-image: url(../img/1366_2000.jpg);
+    min-height: 120vh;
+    width: 100%;
+
+    position: absolute;
+    opacity: .2;
+
+    z-index: 1;
+}
+
+.btnRegistrar{
+    background-color: #23A6F0;
+    color: white;
+    font-weight: bold;
+}
+
+form{
+    z-index: 999;
+}
+
+index{
+    z-index: 999;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mt-6{
+    margin-top: 100px;
+}
+
+
+/* Pagina principal  */
+.bg-main {
+    background-color: #001f54;
+    background-image: linear-gradient(160deg, #021538 0%, #050e2b 100%);
+}
+
+.img-carousel {
+    height: 80vh;
+    max-height: 50rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+.carousel-info {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-shadow: 10px 10px 20px #000;
+}
+
+.btn-customized {
+    background: #23A6F0;
+    padding: 12px 20px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+    transition: .3s;
+}
+
+.btn-customized:hover {
+    filter: brightness(1.2);
+}
+
+#buscarJuego {
+    height: 42px;
+}
+
+.card-customized {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.genero {
+    color: #23A6F0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.price {
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.img-card-container {
+    height: 340px;
+    overflow: hidden;
+}
+
+.img-card-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .7s;
+}
+
+.img-card-container img:hover {
+    transform: scale(1.2);
+}
+
+.publicidad {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent), url("../img/img-promo.jpg") no-repeat;
+    background-position: 70% 0%;
+    background-size: cover;
+    height: 80vh;
+    max-height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 0 30px 6px rgba(3, 3, 36, 0.5);
+}
+
+.btn-customized-2 {
+    background: rgba(100, 100, 100, 0.3);
+    padding: 12px 20px;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btn-customized-2:hover {
+    filter: brightness(1.8);
+}
+
+.tituloAdministracion{
+    background-image: url('../img/gettyimages-1342037882-612x612.jpg');
+    padding: 50px;
+    filter: brightness(1.5);
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.titIntegrantes{
+    color: #23A6F0;
+}
+
+.bg-card{
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #23A6F0;
+}
+
+.iconRedes{
+    color:white;
+}
+
+.iconRedes:hover{
+    color: black;
+}
+
+/* ESTILOS - PAGINA DETALLES  */
+.text-gray{
+    color: #ccc;
+}
+
+.bg-gradient-customized{
+    background: linear-gradient(0deg, rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+
+.img-portada-container {
+    width: 24rem;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.img-portada{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: filter .3s;
+    
+}
+
+.img-portada:hover{
+    filter: brightness(1.15);
+}
+
+
+/*containerComentario*/
+#reseñas{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerComentario{
+    background: linear-gradient(0deg, rgba(0,0,30,0.3), rgba(10,10,70,0.4));
+    border: 1px solid #777;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.4);
+    padding: 16px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.containerComentario .pComentario{
+    font-size: 19px;
+    color: #ccc;
+    word-wrap: break-word;
+    font-style: italic;
+}
+
+.containerIcons{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-montserrat{
+    font-family: 'Montserrat',sans-serif;
+}
+
+.pDislikes{
+    cursor: pointer;
+}
+
+.parrafoPrincipal{
+    color:white;
+    text-align: center;
+}
+
+#positivos{
+    text-decoration: underline;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+#negativos{
+    text-decoration: underline;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+#promedio{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+#textoReseña{
+    margin: 20px 0;
+    background: transparent;
+    border: 1px solid #888;
+}
+
+#textoReseña::placeholder{
+    color: #ccc;
+}
+
+.active{
+    background-color: #23A6F0;
+    color: white;
+    border-radius: 7px;
+}
+
+.btn-close{
+    color: #fff;
+}
+
+#btnLike{
+    border-radius: 45%;
+}
+#btnDislike{
+    border-radius: 45%;
+}
+
+
+
+/*  ESTILOS - PAGINA TODOS LOS JUEGOS  */
+.container-title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50vh;
+    max-height: 38rem;
+    padding-bottom: 40px;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9))
+    ,url(../img/fondo-juegos.jpg) no-repeat;
+    background-position: 50% 20% ;
+    background-size: cover;
+}
+
+.btn-genero{
+    width: 100%;
+}
+
+.simplificarTexto{
+    max-width: 150px;
+}

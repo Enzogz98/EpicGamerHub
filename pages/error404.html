@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 NO ENCONTRADO</title>
+    <link rel="stylesheet" href="../css/404.css">
+</head>
+<body>
+        <section class="notFound">
+            <div class="img">
+            <img src="https://assets.codepen.io/5647096/backToTheHomepage.png" alt="Back to the Homepage"/>
+            <img src="https://assets.codepen.io/5647096/Delorean.png" alt="El Delorean, El Doc y Marti McFly"/>
+            </div>
+            <div class="text">
+            <h1>404</h1>
+            <h2>PAGINA NO ENCONTRADA</h2>
+            <h3>VOLVER AL INICIO?</h3>
+            <a onclick="buttonClick()" href="../index.html" class="yes">SI</a>
+            <a onclick="buttonClick()">NO</a>
+            </div>
+        </section>
+
+        <script>
+            let buttonClick = (e) => {
+                let miSonido = new Audio('../img/explosion.mp3')
+
+                miSonido.play()
+            }
+        </script>
+</body>
+</html>

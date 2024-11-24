@@ -1,0 +1,165 @@
+
+/*Login*/
+.body-login {
+    background-color: #1c1e26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container-login {
+    text-align: center;
+    color: #fff;
+    margin-top: 70px;
+}
+
+.container-login div {
+    margin-bottom: 20px;
+}
+
+.container-login img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.container-login button i {
+    font-size: 24px;
+}
+
+
+.double-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.double-line hr {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: gray;
+    margin: 0 10px;
+}
+
+.double-line p {
+    color: gray;
+    padding: 0 15px;
+    z-index: 1;
+}
+
+
+.form-login {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.form-login input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.form-login button {
+    width: 100%;
+}
+
+.enlaces {
+    text-align: center;
+    font-size: large;
+}
+
+.bi-google {
+    color: white;
+}
+
+.bi-facebook {
+    color: white;
+}
+
+.bi-apple {
+    color: white;
+}
+
+.bi-xbox {
+    color: white;
+}
+
+.bi-playstation {
+    color: white;
+}
+
+.bi-nintendo-switch {
+    color: white;
+}
+
+.bi-steam {
+    color: white;
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.button-container .btn-social {
+    flex: 1 0 calc(25% - 10px);
+    max-width: calc(25% - 10px); 
+    margin: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+.button-container .btn-social.row-top {
+    margin-bottom: 5px; 
+}
+.btn-social.btn-google {
+    background-color: #4285F4;
+    
+  }
+  
+  .btn-social.btn-facebook {
+    background-color: #3B5998;
+   
+  }
+  
+  .btn-social.btn-apple {
+    background-color: #000000;
+    
+  }
+  
+  .btn-social.btn-xbox {
+    background-color: #52B043;
+    
+  }
+  
+  .btn-social.btn-playstation {
+    background-color: #003791;
+    
+  }
+  
+  .btn-social.btn-nintendo-switch {
+    background-color: #E60012;
+    
+  }
+  
+  .btn-social.btn-steam {
+    background-color: #000000;
+   
+  }
+
+.btn-social:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}

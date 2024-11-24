@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="En nuestra web vas a encontrar los videos juegos más populares y a un precio totalmente accesible, te lo pensas perder!"
+    />
+    <meta
+      name="keywords"
+      content="Juegos, Ecommerce, Venta, Gaming, Gamers, HTML, CSS, Bootstrap, responsive, javascript, objetos"
+    />
+    <meta
+      name="author"
+      content="Gonzalez Enzo"
+
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/NavFooter.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Administrador</title>
+  </head>
+  <body class="bg-main">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand mx-auto" href="../index.html">
+            <img
+              src="../img/logo.png"
+              alt="Logo"
+              class="logo d-inline-block align-text-top"
+            />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./juegos.html">Juegos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Mas opciones
+                </a>
+                <ul class="dropdown-menu dropdown-menu-start">
+                  <li>
+                    <a class="dropdown-item" href="./error404.html"
+                      >Más Vendidos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./error404.html"
+                      >Ofertas Especiales</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./error404.html"
+                      >Plataformas de Juego</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./error404.html"
+                      >Medios de Pago</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./error404.html"
+                      >Novedades</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item ocultarAdmin">
+                <a class="nav-link" href="./pages/nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item ocultarAdmin">
+                <button class="nav-link" id="btnFavoritos"><i class="bi bi-heart"></i></button>
+              </li>
+              <li class="nav-item dropdown d-none" id="opcionesAdmin">
+                <a class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                  >Administrador</a
+                >
+                <ul class="dropdown-menu dropdown-menu-start">
+                  <li>
+                    <a class="dropdown-item" href="./administrador.html">Juegos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" href="./adminUsuarios.html">Usuarios</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown ml-auto">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="bi bi-person-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-start" id="opcionesUser">
+                      <li>
+                        <a class="dropdown-item" href="./login.html"
+                          >Iniciar Sesión</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./registro.html"
+                          >Registrarse</a
+                        >
+                      </li>
+                      <li class="d-none"><input type="text" disabled class="dropdown-item"></li>
+                      <li class="d-none">
+                        <button class="dropdown-item text-dark" id="btnCerrarSesion">Cerrar sesión</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-5 my-5">
+      <h1 class="text-center text-light tituloAdministracion">
+        Administración de Usuarios
+      </h1>
+
+      <section class="container my-5" id="seccionUsuarios">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr class="table-primary">
+                <th scope="col">#</th>
+                <th scope="col">Usuario</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Correo Electronico</th>
+                <th scope="col">Rol</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyUsuario">
+              
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <script type="module" src="../js/sessionManager.js"></script>
+    <script type="module" src="../js/userAdmin.js"></script>
+  </body>
+</html>
