@@ -63,8 +63,5 @@ Si eres usuario administrador, visualizarás una nueva opción llamada "Administ
 
 Esto es todo; esperamos que tengas una buena experiencia con nuestra plataforma 🙌
 
-## Equipo de EPICGAMERHUB 🧑‍💻
-- Cornejo, Martin
+## Autor de EPICGAMERHUB 🧑‍💻
 - Gonzalez, Enzo
-- Maza, Sebastian
-- Mercado, Juan
