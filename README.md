@@ -19,13 +19,13 @@ En el contexto de la administración de datos, hacemos uso de las siguientes her
 
 ### Librerias 📚
 
-- [Boostratp v5.3](https://getbootstrap.com/): Fue utilizado para dar estilo a nuestra página y reutilizar diferentes componentes que nos ofrece esta biblioteca.
-- [Sweet Alert v2](https://sweetalert2.github.io/): Esta biblioteca nos ofrece ventanas mucho más amigables para el usuario final, por lo que nos parecía una buena incorporación al proyecto.
-- [Crypto JS v4.2](https://cryptojs.gitbook.io/docs/): Con esta biblioteca proporcionamos seguridad y confianza a los usuarios que se registran en nuestra plataforma, encriptando sus contraseñas para una mayor seguridad, ya que los datos se guardan en localStorage.
+- [Boostratp v5.3](https://getbootstrap.com/): Fue utilizado para dar estilo a la página y reutilizar diferentes componentes que nos ofrece esta biblioteca.
+- [Sweet Alert v2](https://sweetalert2.github.io/): Esta biblioteca ofrece ventanas mucho más amigables para el usuario final, por lo que parecía una buena incorporación al proyecto.
+- [Crypto JS v4.2](https://cryptojs.gitbook.io/docs/): Con esta biblioteca proporcionamos seguridad y confianza a los usuarios que se registran en la plataforma, encriptando sus contraseñas para una mayor seguridad, ya que los datos se guardan en localStorage.
 - [uuid v4](https://www.uuidgenerator.net/version4): UUID se utilizó para obtener códigos de forma dinámica para el alta de juegos y usuarios. Con esta biblioteca, ahorramos al usuario final la tarea de pensar en diferentes códigos para cada alta que desee realizar.
 
 ## Ejecución del proyecto 🚀
-Para la correcta ejecución del proyecto segui los siguientes pasos:
+Para la correcta ejecución del proyecto seguir los siguientes pasos:
 
 1. Debes clonar el repositorio de git en tu PC, lo puedes hacer utilizando el comando 
 
@@ -49,7 +49,7 @@ Desde cualquiera de estas páginas mencionadas anteriormente, podrás acceder a 
 
 También encontrarás una lista desplegable "Más opciones", en la cual verás diferentes botones; todos te llevarán a la página 404 debido a que estas páginas aún no están construidas.
 
-Luego también podrás acceder a una página donde encontrarás información sobre el equipo que desarrolló este proyecto, desde donde podrás contactarnos por nuestro LinkedIn o ver nuestros proyectos de GitHub.
+Luego también podrás acceder a una página donde encontrarás información sobre el equipo que desarrolló este proyecto, desde donde podrás contactarme por LinkedIn o ver mis proyectos de GitHub.
 
 La penúltima opción es un botón con un icono de un "corazoncito". Si lo presionas, se abrirá un panel lateral a la derecha, donde encontrarás todos los juegos que añadiste a favoritos.
 
