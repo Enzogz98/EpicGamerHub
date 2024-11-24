@@ -61,7 +61,7 @@ Si eres usuario administrador, visualizarás una nueva opción llamada "Administ
 
 ```Clave: Admin1234```
 
-Esto es todo; esperamos que tengas una buena experiencia con nuestra plataforma 🙌
+Esto es todo; espero que tengas una buena experiencia con nuestra plataforma 🙌
 
 ## Autor de EPICGAMERHUB 🧑‍💻
 - Gonzalez, Enzo
